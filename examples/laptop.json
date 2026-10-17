@@ -1,0 +1,8 @@
+{
+  "task": "Dựa trên tài liệu, đề xuất một model đã có trên máy để hỏi đáp tiếng Việt. Viết đúng 3 gạch đầu dòng: tên model, lý do chọn, lệnh mở chat. Trích nguồn [S1]. Không đề xuất mua phần cứng.",
+  "context_files": ["knowledge/laptop.md"],
+  "checks": {
+    "contains": ["qwen3:1.7b", "ollama run", "[S1]"],
+    "not_contains": ["qwen3:8b"]
+  }
+}

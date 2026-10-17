@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -euo pipefail
+entry_path="$(readlink -f -- "${BASH_SOURCE[0]}")"
+project_path="$(cd -- "$(dirname -- "$entry_path")/.." && pwd)"
+export PYTHONPATH="$project_path${PYTHONPATH:+:$PYTHONPATH}"
+exec python3 -m astra "$@"

@@ -1,0 +1,18 @@
+{
+  "providers": {
+    "remote": {
+      "type": "compatible",
+      "base_url": "https://api.deepseek.com/v1",
+      "api_key_env": "ASTRA_API_KEY",
+      "json_mode": "object",
+      "input_per_million": null,
+      "output_per_million": null
+    }
+  },
+  "roles": {
+    "planner": {"provider": "remote", "model": "REPLACE_WITH_CHAT_MODEL_ID"},
+    "worker": {"provider": "remote", "model": "REPLACE_WITH_CHAT_MODEL_ID"},
+    "reviewer": {"provider": "remote", "model": "REPLACE_WITH_CHAT_MODEL_ID"}
+  },
+  "limits": {"num_ctx": 8192, "answer_tokens": 768, "max_calls": 7}
+}

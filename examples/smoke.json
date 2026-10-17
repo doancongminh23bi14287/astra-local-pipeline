@@ -1,0 +1,4 @@
+{
+  "task": "Tính 17 nhân 23. Chỉ trả lời một dòng dạng: Kết quả: số.",
+  "checks": {"contains": ["391", "Kết quả:"]}
+}

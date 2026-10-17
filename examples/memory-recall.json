@@ -1,0 +1,4 @@
+{
+  "task": "Dựa vào fact trong session_memory, trả lời mã dự án. Chỉ in mã, không giải thích.",
+  "checks": {"contains": ["SenXanh42"], "not_contains": ["không biết"]}
+}

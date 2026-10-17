@@ -1,0 +1,18 @@
+{
+  "providers": {
+    "local": {"type": "ollama", "base_url": "http://127.0.0.1:11434"},
+    "review_api": {
+      "type": "compatible",
+      "base_url": "https://openrouter.ai/api/v1",
+      "api_key_env": "ASTRA_API_KEY",
+      "json_mode": "object",
+      "input_per_million": null,
+      "output_per_million": null
+    }
+  },
+  "roles": {
+    "planner": {"provider": "local", "model": "qwen3:1.7b"},
+    "worker": {"provider": "local", "model": "qwen3:1.7b"},
+    "reviewer": {"provider": "review_api", "model": "REPLACE_WITH_PROVIDER_MODEL_ID"}
+  }
+}

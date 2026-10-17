@@ -1,0 +1,13 @@
+{
+  "language": "Vietnamese",
+  "limits": {
+    "max_calls": 7,
+    "max_seconds": 900,
+    "num_ctx": 4096,
+    "num_thread": 2,
+    "plan_tokens": 192,
+    "answer_tokens": 384,
+    "review_tokens": 256,
+    "keep_alive": "2m"
+  }
+}

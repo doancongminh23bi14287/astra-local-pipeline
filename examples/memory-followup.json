@@ -1,0 +1,4 @@
+{
+  "task": "Tiếp tục phiên trước: nhắc lại mã dự án đã ghi trong bộ nhớ. Chỉ in mã.",
+  "checks": {"contains": ["SenXanh42"], "not_contains": ["không biết"]}
+}
